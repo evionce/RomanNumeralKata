@@ -201,6 +201,31 @@ public class RomanNumeralConverterTest {
 		assertEquals(50, RomanNumeralConverter.romanNumeralToInteger("L"));
 
 	}
+	@Test
+	public void passConverterCReturn100() {
+		assertEquals(100, RomanNumeralConverter.romanNumeralToInteger("C"));
+
+	}
+	@Test
+	public void passConverterDReturn500() {
+		assertEquals(500, RomanNumeralConverter.romanNumeralToInteger("D"));
+
+	}
+	@Test
+	public void passConverterMReturn1000() {
+		assertEquals(1000, RomanNumeralConverter.romanNumeralToInteger("M"));
+
+	}
+	@Test
+	public void passConverterMCDXLIVReturn1444() {
+		assertEquals(1444, RomanNumeralConverter.romanNumeralToInteger("MCDXLIV"));
+
+	}
+	@Test
+	public void passConverterMMCMIIIReturn2903() {
+		assertEquals(2903, RomanNumeralConverter.romanNumeralToInteger("MMCMIII"));
+
+	}
 	
 	
 }
