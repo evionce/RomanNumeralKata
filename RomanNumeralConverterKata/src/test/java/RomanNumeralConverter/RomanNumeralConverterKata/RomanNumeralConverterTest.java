@@ -96,5 +96,35 @@ public class RomanNumeralConverterTest {
 		assertEquals("XLIV", RomanNumeralConverter.integerToRomanNumeral(44));
 
 	}
+	@Test
+	public void passConverter400ReturnCD() {
+		assertEquals("CD", RomanNumeralConverter.integerToRomanNumeral(400));
+
+	}
+	@Test
+	public void passConverter500ReturnD() {
+		assertEquals("D", RomanNumeralConverter.integerToRomanNumeral(500));
+
+	}
+	@Test
+	public void passConverter900ReturnCM() {
+		assertEquals("CM", RomanNumeralConverter.integerToRomanNumeral(900));
+
+	}
+	@Test
+	public void passConverter1000ReturnM() {
+		assertEquals("M", RomanNumeralConverter.integerToRomanNumeral(1000));
+
+	}
+	@Test
+	public void passConverter1444ReturnMCDXLIV() {
+		assertEquals("MCDXLIV", RomanNumeralConverter.integerToRomanNumeral(1444));
+
+	}
+	@Test
+	public void passConverter2903ReturnMMCMIII() {
+		assertEquals("MMCMIII", RomanNumeralConverter.integerToRomanNumeral(2903));
+
+	}
 
 }

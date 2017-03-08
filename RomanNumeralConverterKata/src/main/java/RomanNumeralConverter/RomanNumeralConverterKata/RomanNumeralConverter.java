@@ -5,6 +5,22 @@ public class RomanNumeralConverter {
 	public static String integerToRomanNumeral(int arabicNumber) {
 		String romanResults = "";
 		
+		while (arabicNumber >= 1000) {
+			romanResults += "M";
+			arabicNumber -= 1000;
+		}
+		while (arabicNumber >= 900) {
+			romanResults += "CM";
+			arabicNumber -= 900;
+		}
+		while (arabicNumber >= 500) {
+			romanResults += "D";
+			arabicNumber -= 500;
+		}
+		while (arabicNumber >= 400) {
+			romanResults += "CD";
+			arabicNumber -= 400;
+		}
 		while (arabicNumber >= 100) {
 			romanResults += "C";
 			arabicNumber -= 100;
