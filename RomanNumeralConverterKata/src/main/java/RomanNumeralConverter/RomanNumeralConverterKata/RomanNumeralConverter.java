@@ -5,6 +5,10 @@ public class RomanNumeralConverter {
 	public static String integerToRomanNumeral(int arabicNumber) {
 		String romanResults = "";
 		
+		while (arabicNumber >= 9) {
+			romanResults += "IX";
+			arabicNumber -= 9;
+		}
 		while (arabicNumber >= 5) {
 			romanResults += "V";
 			arabicNumber -= 5;

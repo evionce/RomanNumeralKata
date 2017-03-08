@@ -36,5 +36,15 @@ public class RomanNumeralConverterTest {
 		assertEquals("V", RomanNumeralConverter.integerToRomanNumeral(5));
 
 	}
+	@Test
+	public void passConverter6ReturnVI() {
+		assertEquals("VI", RomanNumeralConverter.integerToRomanNumeral(6));
+
+	}
+	@Test
+	public void passConverter9ReturnIX() {
+		assertEquals("IX", RomanNumeralConverter.integerToRomanNumeral(9));
+
+	}
 
 }
