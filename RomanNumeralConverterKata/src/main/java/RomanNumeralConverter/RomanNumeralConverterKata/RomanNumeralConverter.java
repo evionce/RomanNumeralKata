@@ -3,13 +3,15 @@ package RomanNumeralConverter.RomanNumeralConverterKata;
 public class RomanNumeralConverter {
 
 	public static int romanNumeralToInteger(String romanNumeral) {
-		return 0;
-		
+		if (romanNumeral == "I") {
+			return 1;
+		} else
+			return 0;
 	}
 
 	public static String integerToRomanNumeral(int arabicNumber) {
 		String romanResults = "";
-		
+
 		while (arabicNumber >= 1000) {
 			romanResults += "M";
 			arabicNumber -= 1000;
