@@ -8,18 +8,20 @@ public class RomanNumeralConverter {
 		Hashtable<Character, Integer> romanToIntValues = new Hashtable<Character, Integer>();
 		romanToIntValues.put('I', 1);
 		romanToIntValues.put('V', 5);
+		romanToIntValues.put('X', 10);
 
-		int intNum = 0;
-		int prevNum = 0;
+
+		int resultNum = 0;
+		int previousNum = 0;
 		for (int i = romanNumeral.length() - 1; i >= 0; i--) {
 			int firstNum = romanToIntValues.get(romanNumeral.charAt(i));
-			if (firstNum < prevNum)
-				intNum -= firstNum;
+			if (firstNum < previousNum)
+				resultNum -= firstNum;
 			else
-				intNum += firstNum;
-			prevNum = firstNum;
+				resultNum += firstNum;
+			previousNum = firstNum;
 		}
-		return intNum;
+		return resultNum;
 
 	}
 
