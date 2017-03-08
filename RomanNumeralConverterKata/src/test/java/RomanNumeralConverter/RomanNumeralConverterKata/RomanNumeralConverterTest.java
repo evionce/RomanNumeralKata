@@ -186,6 +186,21 @@ public class RomanNumeralConverterTest {
 		assertEquals(14, RomanNumeralConverter.romanNumeralToInteger("XIV"));
 
 	}
+	@Test
+	public void passConverterXXXIVReturn34() {
+		assertEquals(34, RomanNumeralConverter.romanNumeralToInteger("XXXIV"));
+
+	}
+	@Test
+	public void passConverterXLReturn40() {
+		assertEquals(40, RomanNumeralConverter.romanNumeralToInteger("XL"));
+
+	}
+	@Test
+	public void passConverterLReturn50() {
+		assertEquals(50, RomanNumeralConverter.romanNumeralToInteger("L"));
+
+	}
 	
 	
 }

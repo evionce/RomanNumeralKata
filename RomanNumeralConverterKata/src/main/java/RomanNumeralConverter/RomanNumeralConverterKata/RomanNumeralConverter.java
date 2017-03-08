@@ -9,6 +9,9 @@ public class RomanNumeralConverter {
 		romanToIntValues.put('I', 1);
 		romanToIntValues.put('V', 5);
 		romanToIntValues.put('X', 10);
+		romanToIntValues.put('L', 50);
+
+		
 
 
 		int resultNum = 0;
