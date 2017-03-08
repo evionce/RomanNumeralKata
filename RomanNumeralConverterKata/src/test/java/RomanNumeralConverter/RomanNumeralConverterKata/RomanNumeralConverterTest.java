@@ -51,5 +51,50 @@ public class RomanNumeralConverterTest {
 		assertEquals("X", RomanNumeralConverter.integerToRomanNumeral(10));
 
 	}
+	@Test
+	public void passConverter20ReturnXX() {
+		assertEquals("XX", RomanNumeralConverter.integerToRomanNumeral(20));
+
+	}
+	@Test
+	public void passConverter29ReturnXXIX() {
+		assertEquals("XXIX", RomanNumeralConverter.integerToRomanNumeral(29));
+
+	}
+	@Test
+	public void passConverter34ReturnXXXIV() {
+		assertEquals("XXXIV", RomanNumeralConverter.integerToRomanNumeral(34));
+
+	}
+	@Test
+	public void passConverter40ReturnXL() {
+		assertEquals("XL", RomanNumeralConverter.integerToRomanNumeral(40));
+
+	}
+	@Test
+	public void passConverter50ReturnL() {
+		assertEquals("L", RomanNumeralConverter.integerToRomanNumeral(50));
+
+	}
+	@Test
+	public void passConverter90ReturnXC() {
+		assertEquals("XC", RomanNumeralConverter.integerToRomanNumeral(90));
+
+	}
+	@Test
+	public void passConverter100ReturnC() {
+		assertEquals("C", RomanNumeralConverter.integerToRomanNumeral(100));
+
+	}
+	@Test
+	public void passConverter99ReturnXCIX() {
+		assertEquals("XCIX", RomanNumeralConverter.integerToRomanNumeral(99));
+
+	}	
+	@Test
+	public void passConverter44ReturnXLIV() {
+		assertEquals("XLIV", RomanNumeralConverter.integerToRomanNumeral(44));
+
+	}
 
 }
