@@ -3,10 +3,12 @@ package RomanNumeralConverter.RomanNumeralConverterKata;
 public class RomanNumeralConverter {
 
 	public static int romanNumeralToInteger(String romanNumeral) {
-		if (romanNumeral == "I") {
-			return 1;
-		} else
-			return 0;
+		int resultNum = 0;
+		for (int i = romanNumeral.length() - 1; i >= 0; i--) {
+			int Ivalue = 1;
+			resultNum += Ivalue;
+		}
+		return resultNum;
 	}
 
 	public static String integerToRomanNumeral(int arabicNumber) {

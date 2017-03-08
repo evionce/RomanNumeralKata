@@ -161,4 +161,10 @@ public class RomanNumeralConverterTest {
 		assertEquals(1, RomanNumeralConverter.romanNumeralToInteger("I"));
 
 	}
+	@Test
+	public void passConverterIIReturn2() {
+		assertEquals(2, RomanNumeralConverter.romanNumeralToInteger("II"));
+
+	}
+	
 }
