@@ -6,7 +6,12 @@ public class RomanNumeralConverter {
 		int resultNum = 0;
 		for (int i = romanNumeral.length() - 1; i >= 0; i--) {
 			int Ivalue = 1;
-			resultNum += Ivalue;
+			int Vvalue = 5;
+			if (romanNumeral.contains("I")) {
+				resultNum += Ivalue;
+			} else if (romanNumeral.contains("V")) {
+				resultNum += Vvalue;
+			}
 		}
 		return resultNum;
 	}
