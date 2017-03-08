@@ -46,5 +46,10 @@ public class RomanNumeralConverterTest {
 		assertEquals("IX", RomanNumeralConverter.integerToRomanNumeral(9));
 
 	}
+	@Test
+	public void passConverter10ReturnX() {
+		assertEquals("X", RomanNumeralConverter.integerToRomanNumeral(10));
+
+	}
 
 }
